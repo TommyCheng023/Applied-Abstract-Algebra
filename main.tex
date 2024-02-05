@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+
+\title{MA 294 Formula Sheet}
+\author{Xinyang(Tommy) Cheng}
+\date{February 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Chapter One}
+\subsection{De Morgan's Law}
+\begin{enumerate}
+\item $(A \cup B)'=A' \cap B'$
+\item $(A \cap B)'=A' \cup B'$
+\end{enumerate}
+\subsection{Cartesian Product}
+$$A \times B = {(a,b): a\in A, b\in B}$$
+
+\subsubsection{Relations}
+\text{Subsets of the Cartesian Product are called relations.}
+
+\subsubsection{Functions (Mapping)}
+$$f\subset A \times B$$
+\text{Function is a special type of relation where} \textbf{each element $a\in A$ has a unique element $b\in B$ such that $(a,b)\in f$}.
+\text{The set $A$ is the domain of $f$ and $f(A)$ is the image/range.}
+\paragraph{Surjective (Onto)}
+\subparagraph{if there exists an $a\in A$ for each $b\in B$ such that $f(a)=b$; for each $b\in B$ there is at least one corresponding $a\in A$}
+\paragraph{Injective (One-to-one)}
+\subparagraph{if $f(a_1)=f(a_2)$ implies $a_1=a_2$; for each $b\in B$ there is at most one corresponding $a\in A$}
+\paragraph{Bijective} a map that is both surjective and injective
+
+\subsection{Composition Theorem}
+$$(g\circ f)(x)=g(f(x))$$
+\begin{itemize}
+    \item The composition of msppings is associative.
+        $$(h\circ g)\circ f=h\circ (g\circ f)$$
+    \item If $f$ and $g$ are both one-to-one, the mapping $g\circ f$ is one-to-one.
+    \item If $f$ and $g$ are both onto, the mapping $g\circ f$ is onto.
+    \item If $f$ and $g$ are bijective, the mapping $g\circ f$ is bijective.
+\end{itemize}
+
+\subsection{Identity Mapping}
+for any set $S$ \\
+notation: $id$ or $id_S$; \\$id(s)=s \;\forall s\in S$
+\subsubsection{Inverse Mapping}
+for $f: A\rightarrow B$:\\
+$g: B\rightarrow A$ is the inverse mapping of it\\
+$$g\circ f=id_A; f\circ g=id_B$$
+A map is said to be invertible if it has an inverse.
+
+\subsection{Equivalence Relations}
+For a set $X$, a relation $R\subset X\times X$ that is:
+\begin{itemize}
+    \item reflexive: $(x,x)\in R \;\forall x\in X$
+    \item symmetric: $(x,y)\in R$ implies $ (y,x)\in R$
+    \item transitive: $(x,y)\in R, (y,z)\in R$ impiles $(x,z)\in R$
+\end{itemize}
+The relation is said to be an equivalence relation, written as $x\sim y$.
+
+\subsection{Partition}
+a partition of a set $X$ is a collection of nonempty sets $X_1, X_2,...$ such that:
+\begin{itemize}
+    \item $X_i \cap X_j = \emptyset$ for $i\neq j$
+    \item $\bigcup_i X_i=X$
+\end{itemize}
+\subsubsection{Equivalence Class}
+$$[x]=\{y\in X: x\sim y\}$$
+\section{Chapter Two}
+\subsection{Mathematical Induction}
+base case+inductive step\\
+recall CAS CS 131
+\subsection{Division Algorithm}
+$$a=bq+r$$
+\begin{itemize}
+    \item $a,b,q,r \in Z$
+    \item $0\leq r<b$
+\end{itemize}
+If $b=ak$ for some integers $k$, we write $a|b$
+\subsubsection{Common Divisor}
+an integer $d$ is a common divisor if $d|a$ and $d|b$
+\subsubsection{Greatest Common Divisor}
+a positive integer $d$ such that $d$ is a common divisor of integers $a$ and $b$; for any other common divisors $d'$ of $a$ and $b$, $d'|d$\\\\
+notation: $d=gcd(a,b)$\\
+$gcd(a,b)=ar+bs$ for some integers $r,s$\\
+
+\textbf{Relatively Prime}: integers $a$ and $b$ are relatively prime if $gcd(a,b)=1$\\
+
+\section{Chapter Three}
+\subsection{Integer Equivalence Classes and Symmetries}
+\begin{itemize}
+    \item $\mathrm{Z}_n=\{[0],[1],[2],...,[n-1]\}$ as a set of equivalence classes where arithmetic is $mod_n$
+    \item $a\equiv b(mod \: n)$ if $n|a-b$
+\end{itemize}
+\paragraph{Symmetry}
+\subsection{Definitions and Examples}
+
+\end{document}
