@@ -96,5 +96,34 @@ $gcd(a,b)=ar+bs$ for some integers $r,s$\\
 \end{itemize}
 \paragraph{Symmetry}
 \subsection{Definitions and Examples}
+\subsubsection{Group}
+A group $(G,\circ)$ is a set $G$ together with a law of composition $\circ$ that satisfies the following axioms:
+\begin{itemize}
+    \item the law of composition is associative: 
+    $(a\circ b)\circ c=a\circ (b\circ c)$ for $a,b,c\in G$
+    \item there exists an element $e\in G$ as the identity element, such that for any element $a\in G$, $e\circ a=a\circ e=a$
+    \item for each element $a\in G$, there exists an inverse element in $G$ denoted by $a^{-1}\in G$ such that $a\circ a^{-1}=a^{-1}\circ a=e$
+\end{itemize}
+A group is said to be \textbf{abelian} if $a\circ b=b\circ a \;\forall a,b\in G$, or else being \textbf{nonabelian}.
+\\Laws of Exponents [$\forall g,h\in G$]\\
+\begin{itemize}
+    \item $g^{m}g^{n}=g^{m+n}\;\forall m,n\in \mathrm{Z}$
+    \item $(g^m)^n=g^{mn}\;\forall m,n\in \mathrm{Z}$
+    \item $(gh)^n=(h^{-1}g^{-1})^{-n}\;\forall n\in \mathrm{Z}$
+    \item if $G$ is abelian, $(gh)^n=g^{n}h^{n}\;\forall n\in\mathrm{Z}$
+\end{itemize}
+\subsubsection{Subgroup}
+A subgroup $H$ of a group $G$ needs to be
+\begin{enumerate}
+    \item a subset $H$ of $G$
+    \item the group operation of $G$ is restricted to $H$
+    \item $H$ itself is a group (meet the conditions)
+\end{enumerate}
+Every group with at least two elements will always have at least two subgroups: the subgroups with only the identity element and the entire group itself.
+\begin{itemize}
+    \item \textbf{Trivial Subgroup:} $H={e}$
+    \item \textbf{Proper Subgroup:} a subgroup that is a proper subset
+\end{itemize}
 
 \end{document}
+
