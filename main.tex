@@ -186,5 +186,15 @@ For $n=3,4,...$, we define the $n$th dihedral group to be the group of rigid mot
 \subsection{Cosets}
 Let $G$ be a group and $H$ be a subgroup of $G$. \\
 Define a \textbf{left coset} of with representative $g\in G$ to be the set $gH=\{gh: h\in H\}$.\\
-Define a \textbf{right coset} of with representative $g\in G$ to be the set $Hg=\{hg: h\in H\}$.
+Define a \textbf{right coset} of with representative $g\in G$ to be the set $Hg=\{hg: h\in H\}$.\\
+Let $H$ be a subgroup of a group $G$ and suppose that $g_1,g_2\in G$. The following conditions are equivalent:
+\begin{enumerate}
+    \item $g_{1}H=g_{2}H$
+    \item $Hg^{-1}_{1}=Hg^{-1}_{2}$
+    \item $g_{1}H\subset g_{2}H$
+    \item $g_{2}\in g_{1}H$
+    \item $g_{1}^{-1}g_{2}\in H$
+\end{enumerate}
+\textbf{Theorem}
+Let $H$ be a subgroup of a group $G$. Then the left cosets of $H$ in $G$ partition $G$. That is, the group $G$ is the disjoint union of the left cosets of $H$ in $G$.
 \end{document}
