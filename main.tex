@@ -197,4 +197,22 @@ Let $H$ be a subgroup of a group $G$ and suppose that $g_1,g_2\in G$. The follow
 \end{enumerate}
 \textbf{Theorem}
 Let $H$ be a subgroup of a group $G$. Then the left cosets of $H$ in $G$ partition $G$. That is, the group $G$ is the disjoint union of the left cosets of $H$ in $G$.
+\textbf{Theorem}
+Let $G$ be a group and $H$ be a subgroup of $G$. Define the \textbf{index} of $H$ in $G$ to be the number of left cosets of $H$ in $G$. We will denote the index by $[G:H]$.\\
+example: $[\mathbb{Z}:3\mathbb{Z}]=3$\\
+\textbf{Theorem}
+Let $H$ be a subgroup of group $G$, The number of left cosets of $H$ in $G$ is the same as the number of right cosets of $H$ in $G$.
+
+\subsection{Lagrange's Theorem}
+\textbf{Theorem}
+Let $G$ be a finite group and let $H$ be a subgroup of $G$. Then $|G|/|H|=[G:H]$ is the number of distinct left cosets of $H$ in $G$. In particular, the number of elements in $H$ must divide the number of elements in $G$.
+\subsection{Fermat's and Euler's Theorems}
+\subsubsection{Euler $\phi$-function}
+The Euler $\phi$-function is the map $\phi$: $\mathbb{N}\rightarrow \mathbb{N}$ defined by $\phi(1)=1$, and, for $n>1$, $\phi(n)$ is the number of positive integers $m$ with $1\leq m<n$ and $gcd(m,n)=1$.
+$$\phi(30)=\phi(2\times 3\times 5)=30-\frac{30}{2}-\frac{30}{3}-\frac{30}{5}+\frac{30}{6}+\frac{30}{10}+\frac{30}{15}-\frac{30}{30}=8$$
+\subsubsection{Euler's Theorem}
+\textbf{Theorem}
+Let $U(n)$ be the group of units in $\mathbb{Z}_n$. Then $|U(n)|=\phi(n)$.\\
+\textbf{Theorem}
+Let $a$ and $n$ be integers such that $n>0$ and $gcd(a,n)=1$. Then $a^{\phi(n)}\equiv 1$ mod $n$.
 \end{document}
