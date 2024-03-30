@@ -218,4 +218,64 @@ Let $a$ and $n$ be integers such that $n>0$ and $gcd(a,n)=1$. Then $a^{\phi(n)}\
 \subsubsection{Fermat's Little Theorem}
 \textbf{Theorem}
 Let $p$ be prime and $1\leq a<p$, then $a^p \equiv a(mod $ $p)$
+\section{Chapter Nine}
+\subsection{Isomorphisms: Definition and Examples}
+\textbf{Theorem}
+All cyclic groups of infinite order are isomorphic to $\mathbb{Z}$.\\
+\textbf{Theorem}
+If $G$ is a cyclic group of order $n$, then $G$ is isomorphic to $\mathbb{Z}_n$. Each group is isomorphic to a group of permutations.\\
+\subsection{Direct Products}
+If $(G, \cdot)$ and $(H, \circ)$ are groups, then we can make the Cartesian product of $G$ and $H$ into a new group. As a set, our group is just the ordered pairs $(g,h)\in G\times H$. We can define a binary operation on $G\times H$ by
+$$(g_1,h_1)(g_2,h_2)=(g_1\cdot g_2, h_1\circ h_2)$$
+\textbf{Theorem}
+Let $(g,h)\in G\times H$. If $g$ and $h$ have finite orders $r$ and $s$ respectively, then the order of $(g,h)$ in $G\times H$ is the least common multiple of $r$ and $h$.\\
+\textbf{Theorem}
+The group $\mathbb{Z}_m \times \mathbb{Z}_n$ is isomorphic to $\mathbb{Z}_{mn}$ if and only if $gcd(m,n)=1$.
+\subsubsection{Internal Direct Product}
+Let $G$ be a group with subgroups $H$ and $K$ satisfying the following conditions:
+\begin{itemize}
+    \item $G=HK={hk:h\in H; k\in K}$
+    \item $H\cap K={e}$
+    \item $hk=kh  \forall h\in H  \forall k\in K$
+\end{itemize}
+Then $G$ is the internal direct product of $H$ and $K$. \textbf{And it is isomorphic to } $\mathbf{H\times K}$.
+
+\\\\\\\\
+
+\section{Chapter Ten}
+\subsection{Normal Subgroups}
+A subgroup $H$ of a group $G$ is \textbf{normal} in $G$ if $gH=Hg$ for all $g\in G$.\\ If $G$ is abelian, then every subgroup is normal.
+\\\\
+\textbf{Theorem}
+Let $G$ be a group and $N$ be a subgroup of $G$. Then the following statements are equivalent:
+\begin{enumerate}
+    \item The subgroup $N$ is normal in $G$.
+    \item For all $g\in G$, $gNg^{-1}\subset N$
+    \item For all $g\in G$, $gNg^{-1}=N$
+\end{enumerate}
+\subsection{Factor Groups}
+If $N$ is a normal subgroup of a group $G$, then he cosets of $N$ in $G$ form a group $G/N$ under the operation $(aN)(bN)=abN$. This group is called the \textbf{factor} or \textbf{quotient group} of $G$ and $N$.
+\\\textbf{Theorem}
+Let $N$ be a normal subgroup of a group $G$. The cosets of $N$ in $G$ form a group $G/N$ of order $[G:N]$.
+\section{Chapter Eleven}
+\subsection{Group Homomorphisms}
+A homomorphism between groups $(G, \cdot)$ and $(H, \circ)$ is a map $\phi : G\rightarrow H$ such that 
+$\mathbf{\phi (g_1 \cdot g_2)=\phi (g_1) \circ \phi(g_2)}$ for $g_1, g_2 \in G$. The range of $\phi$ is called the homomorphic image of $G$.
+\subsubsection{Kernel}
+Let $\phi : G\rightarrow H$ be a group homomorphism and suppose that $e$ is the identity of $H$. The subgroup $\phi ^{-1}({e})$ is called the kernel of $\phi$ and will be denoted by $ker{\phi}$.\\
+\\\textbf{Theorem}
+Let $\phi : G\rightarrow H$ be a group homomorphism. Then the kernel of $\phi$ is a normal subgroup of $G$.
+\\\\\\\\\\\\
+\subsection{Isomorphism Theorems}
+Let $H$ be a normal subgroup of $G$. Define the natural or canonical homomorphism $\phi : G\rightarrow G/H$ by $\phi(g)=gH$.
+\subsubsection{First Isomorphism Theorem}
+If $\psi: G\rightarrow H$ is a group homomorphism with $K=ker \psi$, then $K$ is normal in $G$. 
+\\
+Let $\phi: G\rightarrow G/K$ be the canonical homomorphism. Then there exists a unique isomorphism $\eta: G/K\rightarrow \psi(G)$ such that $\psi = \eta\phi$.
+\subsubsection{Second Isomorphism Theorem}
+Let $H$ be a subgroup of a group $G$ and $N$ a normal subgroup of $G$. THen $HN$ is a subgroup of $G$, $H\cap N$ is a normal subgroup of $H$ and $$H/H\cap N\cong HN/N$$
+\subsubsection{Correspondence Theorem}
+Let $N$ be a normal subgroup of a group $G$. Then $H\longrightarrow H/N$ is a one-to-one correspondence between the set of subgroups $H$ of $G$ containing $N$ and the set of subgroups of $G/N$. Furthermore, the normal subgroups of $G$ containing $N$ correspond to normal subgroups of $G/N$.
+\subsubsection{Third Isomorphism Theorem}
+Let $G$ be a group and $N$ and $H$ be normal subgroups of $G$ with $N\subset H$. Then $$G/H\cong \frac{G/N}{H/N}$$
 \end{document}
